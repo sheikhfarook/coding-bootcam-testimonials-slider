@@ -2,11 +2,38 @@ import antya from "../assets/image-tanya.jpg";
 import john from "../assets/image-john.jpg";
 import preview from "../assets/icon-prev.svg";
 import next from "../assets/icon-next.svg";
+import { Card } from "./data/info";
 const SlideCard = () => {
   return (
     <div className="flex justify-center items-center">
       <div className="">
         <div>
+          {Card?.map((details) => (
+            <div key={details?.id}>
+              <div className="flex">
+                <div>
+                  <div
+                    className="w-[635px] h-[220px] text-[#202047] text-[32px] font-[300]
+          leading-[44px] font-inter  relative mr-[-3.7rem] my-10">
+                    &quot;{details?.info}&quot;
+                  </div>
+                  <div
+                    className="w-[265px] flex gap-2 text-[#202047] text-[20px]
+          font-[700] font-inter leading-[38px] ">
+                    <div>{details?.name}</div>
+                    <div>{details?.roll}</div>
+                  </div>
+                </div>
+                <div>
+                  <div>
+                    <img src={details?.images} alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+        {/* <div>
           <div
             className="w-[635px] h-[220px] text-[#202047] text-[32px] font-[300]
           leading-[44px] font-inter  relative mr-[-3.7rem] my-10">
@@ -40,7 +67,7 @@ const SlideCard = () => {
             <div className="w-[118px] text-[#b9b9ce] font-[500]">
               UX Engineer
             </div> 
-        </div>
+        </div> */}
       </div>
       <div>
         {/* <img
@@ -48,19 +75,19 @@ const SlideCard = () => {
           src={antya}
           alt=""
         /> */}
-        <img
+        {/* <img
           className="w-[540px] h-[540px] rounded-[5px] justify-center my-[9.199rem] "
           src={john}
           alt=""
-        />
-        <div>
+        /> */}
+        {/* <div>
           <button className="">
             <img src={preview} alt="" />
           </button>
           <button>
             <img src={next} alt="" />
           </button>
-        </div>
+        </div> */}
       </div>
     </div>
   );
