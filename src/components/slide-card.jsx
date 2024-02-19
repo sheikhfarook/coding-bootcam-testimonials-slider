@@ -6,6 +6,7 @@ const SlideCard = () => {
   return (
     <div>
       <div>
+        <p className="w-[635px] h-[220px] text-[#202047] text-[32px] font-[300] leading-[44px] font-serif">
           &quot;I&quot;ve been interested in coding for a while but never taken
           the jump , until now. I couldn&quot;t recommend this course
           enough.I&quot;m now in the job of my dreams and so ecited about the
