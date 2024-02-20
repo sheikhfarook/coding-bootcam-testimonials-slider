@@ -12,7 +12,7 @@ export const Card = [
   {
     id: 2,
     info: "If you want to lay the best foundation possible I'd recommend taking this course. The depth the instructors go into is incredible. I now feel so confident about starting up as a professional developer.",
-    name: "John TaKpor ",
+    name: "John Tarkpor ",
     roll: "Junior Front-end Developer",
     images: john,
   },

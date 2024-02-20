@@ -2,11 +2,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-body {
-  background-image: url(../src/assets/pattern-bg.svg),
-    url(../src/assets/pattern-curve.svg), url(../src/assets/pattern-quotes.svg);
-  background-repeat: no-repeat;
-  background-position: 41.94rem 5.2rem, 0px bottom, 16.2rem 14.8rem;
-  background-size: 700px, 610px, 120px;
-  height: 100vh;
+
+@media (min-width: 768px) {
+  body {
+    background-image: url(../src/assets/pattern-bg.svg),
+      url(../src/assets/pattern-curve.svg),
+      url(../src/assets/pattern-quotes.svg);
+    background-repeat: no-repeat;
+    background-position: 41.94rem 5.2rem, 0px bottom, 16.2rem 14.8rem;
+    background-size: 700px, 610px, 120px;
+    height: 100vh;
+  }
+}
+
+@media (min-width: 50px) and (max-width: 767px) {
+  body {
+    background-image: url(../src/assets/pattern-bg.svg),
+      url(../src/assets/pattern-curve.svg),
+      url(../src/assets/pattern-quotes.svg);
+    background-repeat: no-repeat;
+    background-position: 2.95rem 4rem, 0px bottom, 11.45rem 27.5rem;
+    background-size: 326.5px, 285px, 61px;
+    height: 100vh;
+  }
 }
